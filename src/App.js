@@ -52,6 +52,7 @@ function App() {
         <div className="section-left">
         <strong>Select City &nbsp;</strong>
         <select onChange={handleChange}>
+          <option selected disabled>Please select</option>
           {
             cities.map((item, index) => {
               return (<option key={index} value={index}>{item['compare_tabs_1_city_'+(index+1)+'_name']}</option>)
