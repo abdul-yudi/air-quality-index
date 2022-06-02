@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="container">
       <header>
-        <img src={heroImage} width="100%"/>
+        <img src={heroImage} width="100%" alt=""/>
         <h1>{heroTitle} <img src={ciggareteImg} width="20"/></h1>
         <p>{infoDate} | {category}</p>
         <hr/>
