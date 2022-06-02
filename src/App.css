@@ -65,7 +65,8 @@ section{
 select{
   border: 1px solid #ccc;
   border-radius: 6px;
-  padding: 10px 7px;
+  padding: 10px 8px;
+  min-width: 170px;
 }
 
 .section-left{
