@@ -62,7 +62,7 @@ header h1{
 }
 
 section{
-  min-height: calc(100vh - 424px);
+  min-height: calc(100vh - 470px);
 }
 
 select{
