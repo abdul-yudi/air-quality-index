@@ -13,7 +13,7 @@ function App() {
   const [selected, setSelected] = useState([]);
 
   // SET DATA
-  const setData = async () => {
+  const setData = () => {
     setHeroImage(data.hero_1_image);
     setHeroTitle(data.hero_1_title);
     setCategory(data['article-info_1_category']);
@@ -26,7 +26,6 @@ function App() {
   const handleChange = (e) => {
     if (e.target.value !== null){
       var indexCity = e.target.value;
-
       var selectedArr = Object.values(cities[indexCity]);
       setSelected(selectedArr);
     }
@@ -53,8 +52,9 @@ function App() {
         <div className="section-left">
         <strong>Select City &nbsp;</strong>
         <select onChange={handleChange}>
-          {cities.map((item, index) => {
-            return (<option key={index} value={index}>{item['compare_tabs_1_city_'+(index+1)+'_name']}</option>)
+          {
+            cities.map((item, index) => {
+              return (<option key={index} value={index}>{item['compare_tabs_1_city_'+(index+1)+'_name']}</option>)
             })
           }
         </select>
