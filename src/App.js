@@ -60,7 +60,7 @@ function App() {
         </select>
         </div>
         <div className="section-right">
-          {selected !== "" ?
+          {selected.length > 0 ?
             (
               <>
                 <h3>{selected[0]}</h3>
@@ -71,7 +71,7 @@ function App() {
               </>
             )
           :
-            (<div className="loader"></div>)
+            null
           }
         </div>
       </section>
